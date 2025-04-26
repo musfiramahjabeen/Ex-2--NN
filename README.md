@@ -23,6 +23,9 @@ A threshold function, usually Heaviside or sign functions, maps the scalar value
 <img width="283" alt="image" src="https://github.com/Lavanyajoyce/Ex-2--NN/assets/112920679/c6d2bd42-3ec1-42c1-8662-899fa450f483">
 Indeed if the neuron output is exactly zero it cannot be assumed that the sample belongs to the first sample since it lies on the boundary between the two classes. Nonetheless for the sake of simplicity,ignore this situation.<BR>
 # ALGORITHM:
+
+
+
 STEP 1: Importing the libraries<BR>
 STEP 2:Importing the dataset<BR>
 STEP 3:Plot the data to verify the linear separable dataset and consider only two classes<BR>
@@ -38,7 +41,11 @@ STEP 9:For ‘N ‘ iterations ,do the following:<BR>
         W (i+i)= W(i) + learning_rate*(y(i)-t(i))*x(i)<BR>
 STEP 10:Plot the error for each iteration <BR>
 STEP 11:Print the accuracy<BR>
+
+
 # PROGRAM:
+
+
 
 ```python
  import numpy as np
@@ -106,6 +113,7 @@ print("accuracy",accuracy_score(classifier.predict(x_test),y_test)*100)
 plt.plot(range(1,len(classifier.misclassified_samples)+1),classifier.misclassified_samples,marker='o')
 
 ```
+
 
 # OUTPUT:
 
